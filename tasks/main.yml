@@ -25,7 +25,7 @@
     service_list:
       - name: "{{ node_red_service }}"
         description: "Node RED"
-        start_command: "node-red"
+        start_command: "/usr/local/bin/node-red"
         working_directory: "{{ node_red_working_directory }}"
         user_name: "{{ node_red_user_name }}"
         group_name: "{{ node_red_group_name }}"
