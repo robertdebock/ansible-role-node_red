@@ -3,5 +3,5 @@
 # Ansible managed
 #
 repository:
-  description: Install and configure node_red on your system.
+  description: Install and configure Node RED on your system.
   homepage: https://robertdebock.nl/
