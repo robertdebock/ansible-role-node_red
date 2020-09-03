@@ -3,6 +3,11 @@
 - name: include assert.yml
   include_tasks: assert.yml
 
+- name: install node-red requirements
+  package:
+    name: "{{ node_red_requirements }}"
+    state: present
+
 - name: install node-red
   npm:
     name: node-red
@@ -25,7 +30,7 @@
     service_list:
       - name: "{{ node_red_service }}"
         description: "Node RED"
-        start_command: "/usr/local/bin/node-red"
+        start_command: "{{ node_red_start_command }}"
         working_directory: "{{ node_red_working_directory }}"
         user_name: "{{ node_red_user_name }}"
         group_name: "{{ node_red_group_name }}"
