@@ -1,0 +1,7 @@
+---
+- robertdebock.bootstrap
+- robertdebock.ca_certificates
+- robertdebock.epel
+- robertdebock.npm
+- robertdebock.service
+- robertdebock.users

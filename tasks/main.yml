@@ -1,0 +1,37 @@
+---
+# tasks file for node_red
+- name: include assert.yml
+  include_tasks: assert.yml
+
+- name: install node-red
+  npm:
+    name: node-red
+    state: present
+    global: yes
+    unsafe_perm: yes
+
+- name: create working_directory
+  file:
+    path: "{{ node_red_working_directory }}"
+    state: directory
+    owner: "{{ node_red_user_name }}"
+    group: "{{ node_red_group_name }}"
+    mode: "0755"
+
+- name: create service for node-red
+  import_role:
+    name: robertdebock.service
+  vars:
+    service_list:
+      - name: "node-red"
+        description: "Node RED"
+        start_command: "node-red"
+        working_directory: "{{ node_red_working_directory }}"
+        user_name: "{{ node_red_user_name }}"
+        group_name: "{{ node_red_group_name }}"
+
+- name: start service
+  service:
+    name: node-red
+    state: started
+    enabled: yes
