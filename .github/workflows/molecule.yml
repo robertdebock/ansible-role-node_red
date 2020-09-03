@@ -39,8 +39,6 @@ jobs:
             tag: "edge"
           - image: "debian"
             tag: "latest"
-          - image: "debian"
-            tag: "bullseye"
           - image: "centos"
             tag: "7"
           - image: "centos"
