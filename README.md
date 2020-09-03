@@ -109,6 +109,7 @@ This role has been tested on these [container images](https://hub.docker.com/u/r
 |container|tags|
 |---------|----|
 |alpine|all|
+|amazon|2018.03|
 |debian|buster|
 |el|7, 8|
 |fedora|all|

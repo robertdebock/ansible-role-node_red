@@ -23,7 +23,7 @@
     name: robertdebock.service
   vars:
     service_list:
-      - name: "node-red"
+      - name: "node_red"
         description: "Node RED"
         start_command: "node-red"
         working_directory: "{{ node_red_working_directory }}"
