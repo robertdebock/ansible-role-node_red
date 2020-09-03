@@ -23,7 +23,7 @@
     name: robertdebock.service
   vars:
     service_list:
-      - name: "node_red"
+      - name: "{{ node_red_service }}"
         description: "Node RED"
         start_command: "node-red"
         working_directory: "{{ node_red_working_directory }}"
@@ -32,6 +32,6 @@
 
 - name: start service
   service:
-    name: node-red
+    name: "{{ node_red_service }}"
     state: started
     enabled: yes

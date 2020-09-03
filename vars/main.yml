@@ -1,2 +1,4 @@
 ---
 # vars file for node_red
+
+node_red_service: node_red

@@ -4,7 +4,7 @@ Install and configure Node RED on your system.
 
 |Travis|GitHub|Quality|Downloads|Version|
 |------|------|-------|---------|-------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-node_red.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-node_red)|[![github](https://github.com/robertdebock/ansible-role-node_red/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-node_red/actions)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/robertdebock/node_red)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/robertdebock/node_red)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-node_red.svg)](https://github.com/robertdebock/ansible-role-node_red/releases/)|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-node_red.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-node_red)|[![github](https://github.com/robertdebock/ansible-role-node_red/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-node_red/actions)|[![quality](https://img.shields.io/ansible/quality/50571)](https://galaxy.ansible.com/robertdebock/node_red)|[![downloads](https://img.shields.io/ansible/role/d/50571)](https://galaxy.ansible.com/robertdebock/node_red)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-node_red.svg)](https://github.com/robertdebock/ansible-role-node_red/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
