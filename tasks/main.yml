@@ -34,6 +34,7 @@
         working_directory: "{{ node_red_working_directory }}"
         user_name: "{{ node_red_user_name }}"
         group_name: "{{ node_red_group_name }}"
+        status_pattern: "node-red"
 
 - name: start service
   service:
