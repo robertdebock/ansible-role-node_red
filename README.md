@@ -37,7 +37,7 @@ The machine may need to be prepared using `molecule/resources/prepare.yml`:
       users_group_list:
         - name: nodered
       users_user_list:
-        - name: node_red
+        - name: nodered
           group: nodered
 ```
 
