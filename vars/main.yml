@@ -6,7 +6,7 @@ node_red_requirements:
 
 _node_red_start_command:
   default: /usr/local/bin/node-red
-  Alping: /usr/bin/node-red
+  Alpine: /usr/bin/node-red
 
 node_red_start_command: "{{ _node_red_start_command[ansible_os_family] | default(_node_red_start_command['default']) }}"
 
