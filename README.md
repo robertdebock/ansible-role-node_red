@@ -35,10 +35,10 @@ The machine may need to be prepared using `molecule/resources/prepare.yml`:
     - role: robertdebock.npm
     - role: robertdebock.users
       users_group_list:
-        - name: node_red
+        - name: nodered
       users_user_list:
         - name: node_red
-          group: node_red
+          group: nodered
 ```
 
 For verification `molecule/resources/verify.yml` run after the role has been applied.
