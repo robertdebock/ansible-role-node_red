@@ -41,7 +41,7 @@ The machine may need to be prepared using `molecule/resources/prepare.yml`:
           group: nodered
 ```
 
-For verification `molecule/resources/verify.yml` run after the role has been applied.
+For verification `molecule/resources/verify.yml` runs after the role has been applied.
 ```yaml
 ---
 - name: Verify
