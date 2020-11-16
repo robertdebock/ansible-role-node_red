@@ -3,19 +3,16 @@
   assert:
     that:
       - node_red_working_directory is defined
-      - node_red_working_directory | length > 0
     quiet: yes
 
 - name: test if node_red_user_name is set correctly
   assert:
     that:
       - node_red_user_name is defined
-      - node_red_user_name | length > 0
     quiet: yes
 
 - name: test if node_red_group_name is set correctly
   assert:
     that:
       - node_red_group_name is defined
-      - node_red_group_name | length > 0
     quiet: yes
