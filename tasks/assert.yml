@@ -1,4 +1,5 @@
 ---
+
 - name: test if node_red_working_directory is set correctly
   assert:
     that:
