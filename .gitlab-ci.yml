@@ -24,8 +24,6 @@ molecule:
         tag: "32"
       - image: "fedora"
         tag: "latest"
-      - image: "fedora"
-        tag: "rawhide"
       - image: "ubuntu"
         tag: "bionic"
       - image: "ubuntu"
