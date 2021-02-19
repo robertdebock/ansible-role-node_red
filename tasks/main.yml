@@ -7,19 +7,19 @@
   delegate_to: localhost
 
 - name: install node-red requirements
-  package:
+  ansible.builtin.package:
     name: "{{ node_red_requirements }}"
     state: present
 
 - name: install node-red
-  npm:
+  community.general.npm:
     name: node-red
     state: present
     global: yes
     unsafe_perm: yes
 
 - name: create working_directory
-  file:
+  ansible.builtin.file:
     path: "{{ node_red_working_directory }}"
     state: directory
     owner: "{{ node_red_user_name }}"
@@ -27,7 +27,7 @@
     mode: "0755"
 
 - name: create service for node-red
-  import_role:
+  ansible.builtin.import_role:
     name: robertdebock.service
   vars:
     service_list:
@@ -40,7 +40,7 @@
         status_pattern: "node-red"
 
 - name: start service
-  service:
+  ansible.builtin.service:
     name: "{{ node_red_service }}"
     state: started
     enabled: yes
