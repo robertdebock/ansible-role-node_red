@@ -27,8 +27,6 @@ molecule:
       - image: "fedora"
         tag: "rawhide"
       - image: "ubuntu"
-        tag: "bionic"
-      - image: "ubuntu"
         tag: "latest"
 
 galaxy:

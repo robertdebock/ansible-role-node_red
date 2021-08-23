@@ -44,8 +44,6 @@ jobs:
           - image: "fedora"
             tag: "rawhide"
           - image: "ubuntu"
-            tag: "bionic"
-          - image: "ubuntu"
             tag: "latest"
     steps:
       - name: checkout
