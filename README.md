@@ -1,4 +1,4 @@
-# Ansible role [node_red](#node_red)
+# [Ansible role node_red](#node_red)
 
 Install and configure Node RED on your system.
 
