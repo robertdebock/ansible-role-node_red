@@ -36,9 +36,9 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
     - role: robertdebock.epel
     - role: robertdebock.npm
     - role: robertdebock.users
-      users_group_list:
+      users_groups:
         - name: nodered
-      users_user_list:
+      users:
         - name: nodered
           group: nodered
 ```
