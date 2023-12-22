@@ -1,5 +1,7 @@
 # [Ansible role node_red](#node_red)
 
+> THIS ROLE HAS BEEN ARCHIVED AS OF DEC 2023.
+
 Install and configure Node RED on your system.
 
 |GitHub|GitLab|Downloads|Version|
