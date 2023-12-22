@@ -1,0 +1,19 @@
+digraph PhiloDilemma {
+  label = "Robert de Bock" ;
+  overlap=false
+  {
+    "node_red" [fillcolor=yellow style=filled penwidth=3]
+    "robertdebock.bootstrap" [fillcolor=green style=filled]
+    "robertdebock.ca_certificates" [fillcolor=green style=filled]
+    "robertdebock.epel" [fillcolor=green style=filled]
+    "robertdebock.npm" [fillcolor=green style=filled]
+    "robertdebock.service" [fillcolor=green style=filled]
+    "robertdebock.users" [fillcolor=green style=filled]
+  }
+  "node_red" -> "robertdebock.bootstrap"
+  "node_red" -> "robertdebock.ca_certificates"
+  "node_red" -> "robertdebock.epel"
+  "node_red" -> "robertdebock.npm"
+  "node_red" -> "robertdebock.service"
+  "node_red" -> "robertdebock.users"
+}
